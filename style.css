@@ -59,6 +59,15 @@ button {
     cursor: pointer;
 }
 
+.button-group {
+    display: grid;
+    gap: 8px;
+}
+
+#resetButton {
+    background: #e8e8e8;
+}
+
 #result {
     margin-top: 20px;
     padding: 16px;
