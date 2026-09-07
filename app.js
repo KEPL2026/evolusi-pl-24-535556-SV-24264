@@ -2,6 +2,7 @@ import { celsiusKeFahrenheit } from './logika.js';
 
 const input = document.querySelector('#celsius');
 const button = document.querySelector('#convertButton');
+const resetButton = document.querySelector('#resetButton');
 const result = document.querySelector('#result');
 
 button.addEventListener('click', () => {
@@ -15,3 +16,13 @@ button.addEventListener('click', () => {
     const fahrenheit = celsiusKeFahrenheit(celsius);
     result.textContent = `${celsius} °C = ${fahrenheit} °F`;
 });
+
+resetButton.addEventListener('click', () => {
+    input.value = '';
+    result.textContent = 'Hasil akan tampil di sini.';
+    input.focus();
+});
+
+
+
+
